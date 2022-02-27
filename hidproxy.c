@@ -1,18 +1,21 @@
 /*
  *  Copyright (c) 1999-2000 Vojtech Pavlik
  *  Copyright (c) 2009-2011 Red Hat, Inc
+ *  Copyright (c) 2022 MooreaTV <moorea@ymail.com>
  */
 
 /**
  * @file
- * Event device test program
+ * Read events from one (usb keyboard) input and send them to a hid OTG keyboard.
+ *
+ * Originally Event device test program (evtest.c v 1.34)
  *
  * evtest prints the capabilities on the kernel devices in /dev/input/eventX
  * and their events. Its primary purpose is for kernel or X driver
  * debugging.
  *
- * See INSTALL for installation details or manually compile with
- * gcc -o evtest evtest.c
+ * Manually compile with
+ * gcc -o hidproxy hidproxy.c
  */
 
 /*
